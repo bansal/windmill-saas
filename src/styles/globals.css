@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 4rem;
+}
+@layer utilities {
+  .text-title {
+    @apply text-base-800 dark:text-base-100;
+  }
+  .text-base {
+    @apply text-base-600 dark:text-base-400;
+  }
+  .text-muted {
+    @apply text-base-500;
+  }
+  .border-base {
+    @apply border-base-300 dark:border-base-700;
+  }
+  .absolute-center {
+    @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+}
+
+@layer components {
+  .title-gradient {
+    @apply bg-gradient-to-b from-base-500 to-base-900 dark:from-base-400 dark:to-base-50 bg-clip-text text-transparent;
+  }
+}
